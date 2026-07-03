@@ -1,0 +1,52 @@
+.page {
+  display: grid;
+  gap: 24px;
+}
+
+.form {
+  display: flex;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 28px;
+  background: var(--social-bg);
+  box-shadow: var(--shadow);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--focus);
+}
+
+.button {
+  border: none;
+  border-radius: 18px;
+  padding: 16px 24px;
+  font-weight: 700;
+  color: var(--border);
+  background: linear-gradient(135deg, var(--lg-bg), var(--focus));
+  cursor: pointer;
+}
+
+.state,
+.error {
+  margin: 0;
+  color: var(--text);
+}
+
+.error {
+  color: var(--error);
+}
+
+@media (max-width: 640px) {
+  .form {
+    flex-direction: column;
+  }
+}

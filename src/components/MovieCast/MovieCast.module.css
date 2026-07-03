@@ -1,0 +1,45 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.photo {
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+}
+
+.name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.role {
+  margin: 0;
+  color: var(--text-h);
+}
+
+.state,
+.error {
+  margin-top: 24px;
+  color: var(--text);
+}
+
+.error {
+  color: var(--error);
+}

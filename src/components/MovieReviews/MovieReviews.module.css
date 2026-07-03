@@ -1,0 +1,32 @@
+.list {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.author {
+  margin: 0 0 10px;
+  color: var(--black);
+}
+
+.content {
+  margin: 0;
+  color: var(--text);
+}
+
+.state,
+.error {
+  margin-top: 24px;
+  color: var(--text);
+}
+
+.error {
+  color: var(--error);
+}

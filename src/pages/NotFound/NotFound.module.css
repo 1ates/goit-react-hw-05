@@ -1,0 +1,29 @@
+.page {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.code,
+.title,
+.text {
+  margin: 0;
+}
+
+.code {
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--focus);
+}
+
+.title {
+  font-size: 36px;
+  color: var(--black);
+}
+
+.text {
+  max-width: 520px;
+  color: var(--text-h);
+}

@@ -1,0 +1,51 @@
+.page {
+  display: grid;
+  gap: 28px;
+}
+
+.hero {
+  justify-items: center;
+  padding: 32px;
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, var(--lineer-bg1), var(--lineer-bg2)), linear-gradient(135deg, var(--lg-bg), var(--lg-bg1));
+  box-shadow: var(--shadow);
+}
+
+.title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--caution);
+}
+
+.motto {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 42px);
+  line-height: 1.05;
+  color: var(--black);
+}
+
+.description,
+.notice,
+.state,
+.error {
+  margin: 0;
+  color: var(--text);
+}
+
+.description {
+  margin-top: 12px;
+  max-width: 680px;
+  font-size: 18px;
+}
+
+.notice {
+  margin-top: 18px;
+  color: var(--caution);
+}
+
+.error {
+  color: var(--error);
+}

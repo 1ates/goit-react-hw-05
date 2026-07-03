@@ -1,0 +1,96 @@
+.page {
+  display: grid;
+  gap: 24px;
+}
+
+.backLink {
+  justify-self: start;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: #111827;
+  box-shadow: var(--shadow);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 28px;
+  padding: 24px;
+  border-radius: 32px;
+  background: var(--social-bg);
+  box-shadow: var(--shadow);
+}
+
+.poster {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.content {
+  display: grid;
+  gap: 18px;
+}
+
+.title,
+.subtitle,
+.additionalTitle {
+  margin: 0;
+}
+
+.title {
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.05;
+}
+
+.year,
+.score,
+.text,
+.state,
+.error {
+  color: var(--text);
+}
+
+.score,
+.text {
+  margin: 0;
+}
+
+.additional {
+  padding: 24px;
+  border-radius: 28px;
+  background: var(--social-bg);
+  box-shadow: var(--shadow);
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.detailsLink {
+  padding: 10px 18px;
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--code-bg);
+}
+
+.active {
+  color: var(--bg);
+  background: linear-gradient(135deg, var(--lg-bg1), var(--focus));
+}
+
+.error {
+  color: var(--error);
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    flex-wrap: wrap;
+  }
+}
